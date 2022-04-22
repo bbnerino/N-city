@@ -1,7 +1,7 @@
 import Phaser from 'phaser'
 
 export const createCharacterAnims = (anims: Phaser.Animations.AnimationManager) => {
-  const animsFrameRate = 15 // 프레임 -> 낮으면 안걸어다님
+  const animsFrameRate = 12 // 프레임 -> 낮으면 안걸어다님
 
   // anims.create({ // key, nancy.png 에서 012345번 사진 6개 사용 
   //   key: 'nancy_idle_right',

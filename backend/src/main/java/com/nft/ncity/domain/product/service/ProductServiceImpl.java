@@ -229,7 +229,7 @@ public class ProductServiceImpl implements ProductService{
         for(Product p : products.getContent()){
             ProductListGetRes productList = new ProductListGetRes();
 
-             User user = userRepositorySupport.findMintingUserByProductId(p.getProductId());
+            User user = userRepositorySupport.findMintingUserByProductId(p.getProductId());
 
             productList.setUserRole(user.getUserRole());
             productList.setProductTitle(p.getProductTitle());
@@ -395,7 +395,6 @@ public class ProductServiceImpl implements ProductService{
                 productListGetRes.setProductState(product.get(qProduct).getProductState());
 
                 res.add(productListGetRes);
-
                 }
             );
         return res;

@@ -3,7 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import { Server, LobbyRoom } from 'colyseus'
 import { monitor } from '@colyseus/monitor'
-import { RoomType } from '../../frontend/src/types/Rooms'
+import { RoomType } from './types/Rooms'
 
 
 // import socialRoutes from "@colyseus/social/express"
@@ -44,5 +44,5 @@ gameServer.define(RoomType.CUSTOM, NCity ).enableRealtimeListing()
 // register colyseus monitor AFTER registering your room handlers
 app.use('/colyseus', monitor())
 
-gameServer.listen(port)
-
+gameServer.listen(port, "0.0.0.0")
+// gameServer.listen(port)

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 
-import { useAppSelector, useAppDispatch } from "./hooks";
+import { useAppSelector, useAppDispatch  } from "./hooks";
 // typescript에서 useSelector 사용 하려면 hooks를 만들어서 불러와야한다.
 
 import MainDialog from "./components/MainDialog"; // 캐릭터 고르는 화면
@@ -18,7 +18,7 @@ import Game from "./scenes/Game";
 import Start from "./scenes/Start";
 import EditBar from "./components/EditBar";
 import UIBar from "./components/Bar/UIBar";
-import { IRoomData } from "../types/Rooms";
+import { IRoomData } from '../types/Rooms'
 
 import { UserMapInfo } from "./stores/EditStore";
 import { setUserProducts } from "./stores/UserStore";
@@ -31,7 +31,9 @@ import basicData from "./scenes/map.json";
 import Editmap from "./scenes/Editmap";
 import GameLoading from "../components/Popup/GameLoading";
 
-const Backdrop = styled.div``;
+const Backdrop = styled.div`
+
+`;
 
 window.addEventListener(
   "keydown",
@@ -128,7 +130,6 @@ const GameApp: Function = () => {
         dispatch(setUserProducts(res));
       },
       onError: (err: any) => {
-        
       },
     }
   );
@@ -155,6 +156,7 @@ const GameApp: Function = () => {
     };
   }, []);
 
+
   const computerDialogOpen = useAppSelector(
     (state) => state.computer.computerDialogOpen
   );
@@ -167,7 +169,7 @@ const GameApp: Function = () => {
 
   let game = phaserGame.scene.keys.game as Game;
   let bootstrap = phaserGame.scene.keys.bootstrap as Bootstrap;
-  let start = phaserGame.scene.keys.start as Start;
+  let start = phaserGame.scene.keys.start as Start
 
   async function ConnectStart() {
     // 부트스트랩 시작시키기
