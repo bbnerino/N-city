@@ -13,17 +13,21 @@
 
 # 사용 영상 
 
-
+<div>
 ![엔시티메인화면](https://github.com/bbnerino/N-city/assets/83864924/ba60c94a-8b53-4b7c-b444-6de1d16c2237)
+</div>
 <br>
 메인페이지 + 검색 + 캐릭터를 구매하는 모습
-
+<div>
 ![엔시티작품등록](https://github.com/bbnerino/N-city/assets/83864924/3c385544-d98e-454b-a4b6-8f296264215d)
+</div>
 <br>
 나의 페이지에서 구매한 캐릭터를 고르는 모습 
-
+<div>
 ![엔시티캐릭터](https://github.com/bbnerino/N-city/assets/83864924/bb5ae91b-ddef-4f9d-8158-bde49df1162c)
+</div>
 <br>
+
 게임 내 구입한 nft 작품을 거는 모습 + 캐릭터 이동 모습 
 
 
